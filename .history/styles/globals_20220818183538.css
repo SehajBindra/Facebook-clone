@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .link {
+        @apply hover:underline cursor-pointer
+    }
+
+    .avatar {
+        @apply h-6 w-6 sm:h-10 sm:w-10  rounded-full object-cover cursor-pointer transition duration-150 transform hover:scale-110
+    }
+    .btn {
+        @apply bg-[#f8f9fa] p-3 rounded-lg ring-gray-200 ring-1 text-base text-gray-800 hover:ring-2 focus:outline-none active:ring-gray-300 peer-hover:shadow-md;
+    }
+}

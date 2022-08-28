@@ -67,7 +67,7 @@ function Header() {
               : "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt974d872b695b0d81/624ae84f0156b57dc6d81cd1/Ryan_Reynolds.jpg"
           }
         />
-        <p className="hidden md:inline-flex items-center ml-2 font-semibold pr-3 whitespace-nowrap cursor-pointer">
+        <p className="hidden md:inline-flex items-center ml-2 font-semibold pr-3 whitespace-nowrap">
           {" "}
           {session ? `${session.user?.name}` : "Sign-In"}
         </p>

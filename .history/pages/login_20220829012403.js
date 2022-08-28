@@ -33,7 +33,7 @@ function SignIn({ providers }) {
             Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <button
-                  className="flex  p-3 bg-blue-500 mb-4 rounded-lg text-white"
+                  className="flex  p-3 bg-blue-500 rounded-lg text-white"
                   onClick={() => signIn(provider.id, { callbackUrl: "/" })}
                 >
                   Sign In With {provider.name}

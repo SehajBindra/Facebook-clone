@@ -28,7 +28,7 @@ function SignIn({ providers }) {
           all the rights reserved to Facebook(meta) @ 2022
         </p>
 
-        <div className="mt-40 flex flex-col items-center sm:flex-row sm:space-x-4">
+        <div className="mt-40 flex sm:flex-row sm:space-x-4">
           {providers &&
             Object.values(providers).map((provider) => (
               <div key={provider.name}>

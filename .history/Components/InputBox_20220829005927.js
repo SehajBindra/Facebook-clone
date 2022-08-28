@@ -72,7 +72,11 @@ function InputBox() {
             ref={InputRef}
             className=" focus-within:outline-none flex-grow rounded-full px-5 h-12 bg-gray-100"
             type="text"
-            placeholder={`What's on Your mind  ${session?.user.name}?`}
+            placeholder={
+              !session
+                ? `What's on Your mind  ${session?.user.name}?`
+                : "What's on Your mind?"
+            }
           />
 
           <button type="submit" hidden className="" onClick={sendPost}>

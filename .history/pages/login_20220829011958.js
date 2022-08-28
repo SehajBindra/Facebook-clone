@@ -28,12 +28,12 @@ function SignIn({ providers }) {
           all the rights reserved to Facebook(meta) @ 2022
         </p>
 
-        <div className="mt-40 flex flex-col items-center sm:flex-row sm:space-x-4">
+        <div className="mt-40">
           {providers &&
             Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <button
-                  className="flex  p-3 bg-blue-500 mb-4 rounded-lg text-white"
+                  className=" p-3 bg-blue-500 mb-4 rounded-lg text-white"
                   onClick={() => signIn(provider.id, { callbackUrl: "/" })}
                 >
                   Sign In With {provider.name}

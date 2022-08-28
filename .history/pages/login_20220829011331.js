@@ -17,23 +17,19 @@ function SignIn({ providers }) {
       </Head>
 
       <div className="flex flex-col justify-center items-center min-h-screen py-2  px-14 text-center bg-black">
-        <img
-          className="w-80"
-          src="https://1000logos.net/wp-content/uploads/2021/10/logo-Meta.png"
-          alt=""
-        />
+        <img className="w-80" src="https://links.papareact.com/t4i" alt="" />
 
-        <p className="font-xs text-white  mt-5">
+        <p className="font-xs text-blue-500 ">
           This is not a Real App it is Built for Educational Purposes only and
-          all the rights reserved to Facebook(meta) @ 2022
+          all the rights reserved to facebook(meta) @ 2022
         </p>
 
-        <div className="mt-40 flex flex-col items-center sm:flex-row sm:space-x-4">
+        <div className="mt-40 flex-row">
           {providers &&
             Object.values(providers).map((provider) => (
               <div key={provider.name}>
                 <button
-                  className="flex  p-3 bg-blue-500 mb-4 rounded-lg text-white"
+                  className="flex p-3 bg-blue-500 mb-4 rounded-lg text-white"
                   onClick={() => signIn(provider.id, { callbackUrl: "/" })}
                 >
                   Sign In With {provider.name}
